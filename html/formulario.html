@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/b7052b5e0e.js" crossorigin="anonymous"></script>
+    <title>Crazy Cat Gang - Nova Solicitação</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="menu">
+                <img src="../images/logo.png" width="70px" height="70px"/>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="estoque.html"> Estoque </a></li>
+                        <li><a href="solicitacoes.html" > Solicitações </a></li>
+                        <li><a href="formulario.html"> Nova Solicitação </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form" id="formulario">
+            <h1>Nova Solicitação</h1>
+            
+            <div class="inputs">
+                <form id="solicitacao">
+                    <h4>Nome</h4>
+                    <input type="text" placeholder="Nome do Solicitante" class="input nome" name="nome">
+
+                    <h4>Endereço</h4>
+                    <div class="endereco">
+                        <input type="text" placeholder="Rua" class="input rua" name="rua">
+                        <input type="text" placeholder="N°" class="input numero" name="numero">
+                        <input type="text" placeholder="Bairro" class="input bairro" name="bairro">
+                    </div>
+
+                    <h4>Telefone</h4>
+                    <input type="text" placeholder="Telefone" class="telefone" name="telefone">
+
+                    <h4>Nível de Urgência</h4>
+                    <select id="" class="urgencia" name="urgencia">
+                        <option value="1">Baixo</option>
+                        <option value="2">Médio</option>
+                        <option value="3">Alto</option>
+                    </select>
+
+                    <h4>Produtos</h4>
+                    <div id="pedidos">
+                        <div class="pedido">
+                            <select class="input item" id="produto" name="produto[]">
+
+                            </select>
+                            <input type="number" placeholder="Quantidade" class="input qtd" name="qtd[]">
+                        </div>
+                    </div>
+                    <button class="mais" type="button" onclick="add_select()"><i class="fa-solid fa-plus"></i></button>
+                </form>
+
+                
+                            
+            </div>
+
+            <div class="btn" type="button" onclick="nova_solicitacao()">
+                <button>
+                    Solicitar
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 600px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.form .inputs{
+    width: 90%;
+}
+
+.form .inputs .input{
+    border: none;
+    height: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    margin: 10px 5px;
+}
+
+.form .inputs .pedido select{
+    height: 40px;
+}
+
+.endereco{
+    display: flex;
+}
+
+.rua{
+    width: 30%;
+}
+
+.numero{
+    width: 10%;
+}
+
+.bairro{
+    width: 30%;
+}
+
+.pedido{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    width: 60%;
+    text-align: center;
+}
+
+.qtd{
+    width: 20%;
+}
+
+.nome{
+    width: 90%;
+}
+
+.form h4{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.urgencia{
+    border: none;
+    height: 40px;
+    width: 30%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    margin: 10px 5px;
+    color: black;
+    text-align: center;
+}
+
+.telefone{
+    border: none;
+    height: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    margin: 10px 5px;
+    width: 50%;
+}
+
+.btn button{
+    border: none;
+    background-color: #fcb900;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    transform: scale(1.1);
+    background-color: #fdcb41;
+}
+
+.mais{
+    border: none;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menos{
+    border: none;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.menos i{
+    margin-top: 5px;
+}
